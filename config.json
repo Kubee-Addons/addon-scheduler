@@ -1,0 +1,34 @@
+{
+  "name": "Scheduler",
+  "version": "0.13",
+  "slug": "scheduler",
+  "description": "Kubee scheduler",
+  "url": "https://github.com/kubee-addons/addon-schedulerler",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "panel_icon": "mdi:calendar-clock",
+  "panel_title": "Scheduler",
+  "panel_admin": false,
+  "boot": "auto",
+  "stdin": true,
+  "map": [
+    "share:rw",
+    "config:rw"
+  ], 
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "ingress": true,
+  "options": {
+    "log_level": "info",
+	"max_retries": 2,
+	"max_retry_interval": 5,
+	"bk_color": "transparent"
+  },
+  "schema": {
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
+	"max_retries": "int(1,10)",
+	"max_retry_interval": "int(1,120)",
+	"bk_color": "str"
+  },
+  "webui": "http://[HOST]:[PORT:8099]"
+}
