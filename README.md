@@ -1,6 +1,6 @@
 # Kubee Scheduler
 
-Scheduler Addon Home Hassistant
+Scheduler Addon ...
 
 This addon give us the possibility to handle a simple week configuration of automation, light, binary_sensor, climate, cover, switch and script.
 
